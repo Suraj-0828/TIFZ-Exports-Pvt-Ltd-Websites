@@ -49,6 +49,19 @@
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0LJHN21FY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P0LJHN21FY');
+    </script>
+
     <style>
         .success {
             text-align: center;
@@ -90,6 +103,7 @@
 
     <!-- Breadcrumb -->
     <div class="pq-breadcrumb">
+        <img src="images/breadcrumb/aaa.jpg" alt="Background Image" class="pq-breadcrumb-img">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -97,7 +111,6 @@
                         <div class="pq-breadcrumb-title translatebreadcrumbtext">
                             <h1>Failed</h1>
                         </div>
-                        
                     </nav>
                 </div>
             </div>

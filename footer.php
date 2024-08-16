@@ -6,9 +6,9 @@
                     <div class="col-xl-4 col-md-6">
                         <div class="widget">
                             <h4 class="footer-title">
-                            <a href="https://tifzexports.com/">
-                            <img src="images/logos/footer-logo.png" alt="Footer Logo">
-                            </a>
+                                <a href="https://tifzexports.com/">
+                                    <img src="images/logos/footer-logo.png" alt="Footer Logo">
+                                </a>
                             </h4>
                             <p>At TIFZ Exports Pvt. Ltd., we specialize in exporting premium food products and are committed to excellence. We uphold the highest global standards in quality and service, ensuring satisfaction for customers worldwide.</p>
                         </div>
@@ -48,7 +48,7 @@
                                                 <i class="fa fa-map-marker"></i>
                                                 <span style="margin-left: 23px;">Plot 390 / 392, Hakim Bungalow, Shaikh Misree Road, Antop Hill, Mumbai - 400037</span>
                                             </li>
-                                            
+
                                             <li>
                                                 <a href="tel:+919920028121">
                                                     <i class="fas fa-phone"></i>
@@ -77,7 +77,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="row text-center mr-auto">
@@ -86,7 +85,7 @@
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script>
-                                <span style="color: #50eb6a">TIFZ Exports</span>, All Rights and Reserved. Powered by <a href="https://www.itarsia.com/" target="_blank" style="color: #50eb6a">Itarsia India Limited</a>.
+                                <span style="color: #408242">TIFZ Exports</span>, All Rights and Reserved. Powered by <a href="https://www.itarsia.com/" target="_blank" style="color: #408242">Itarsia India Limited</a>.
                             </span>
                         </div>
                     </div>
@@ -135,18 +134,42 @@
 <script src="js/custom.js"></script>
 </body>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    var currentPage = window.location.pathname.split("/").pop();
-    var menuItems = document.querySelectorAll("#pq-main-menu .menu-item a");
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentUrl = window.location.href;
+        const menuItems = document.querySelectorAll('#pq-main-menu a');
 
-    menuItems.forEach(function(item) {
-        if (item.getAttribute("href") === currentPage) {
-            item.parentElement.classList.add("current-menu-item");
-        }
+        menuItems.forEach(item => {
+            if (item.href === currentUrl) {
+                item.classList.add('active');
+            }
+        });
     });
-});
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var currentPage = window.location.pathname.split("/").pop();
+        var menuItems = document.querySelectorAll("#pq-main-menu .menu-item a");
 
+        menuItems.forEach(function(item) {
+            if (item.getAttribute("href") === currentPage) {
+                item.parentElement.classList.add("current-menu-item");
+            }
+        });
+    });
+</script>
+<script>
+    // JavaScript to highlight the active page
+    document.addEventListener("DOMContentLoaded", function() {
+        const navItems = document.querySelectorAll('.nav-item');
+        const currentPage = window.location.pathname.split("/").pop();
+
+        navItems.forEach(item => {
+            if (item.getAttribute('href') === currentPage) {
+                item.classList.add('active');
+            }
+        });
+    });
+</script>
 <script>
     'undefined' === typeof _trfq || (window._trfq = []);
     'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({

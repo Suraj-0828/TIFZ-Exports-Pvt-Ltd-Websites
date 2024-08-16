@@ -65,6 +65,7 @@
              <ul>
                  <li><a target="_blank" href="https://www.facebook.com/tifzexport/"><img src="images/logos/facebook.png"></a></li>
                  <li><a target="_blank" href="https://x.com/TIFZexports"><img src="images/logos/xx.png"></a></li>
+                 <li><a target="_blank" href="https://www.linkedin.com/company/tifzexports/"><img src="images/logos/linkedin1.png"></a></li>
                  <li><a target="_blank" href="https://www.instagram.com/tifzexports/"><img src="images/logos/instagram.png"></a></li>
                  <li><a target="_blank" href="https://wa.me/919920028121"><img src="images/logos/whatsapp.png"></a></li>
              </ul>
@@ -80,6 +81,7 @@
                          <ul>
                              <li><a target="_blank" href="https://www.facebook.com/tifzexport/"><img src="images/logos/facebook1.png"></a></li>
                              <li><a target="_blank" href="https://x.com/TIFZexports"><img src="images/logos/x.png"></a></li>
+                             <li><a target="_blank" href="https://www.linkedin.com/company/tifzexports/"><img src="images/logos/linkedin.png"></a></li>
                              <li><a target="_blank" href="https://www.instagram.com/tifzexports/"><img src="images/logos/instagram1.png"></a></li>
                              <li><a target="_blank" href="https://wa.me/919920028121"><img src="images/logos/whatsapp1.png"></a></li>
                          </ul>
@@ -113,60 +115,52 @@
          </div>
      </div>
      <div class="pq-bottom-header">
-         <div class="container-fluid">
-             <div class="row">
-                 <div class="col-lg-12">
-                     <nav class="navbar navbar-expand-lg navbar-light">
-                         <a class="navbar-brand" href="https://tifzexports.com/">
-                             <img class="img-fluid logo" src="images/logos/header-logo.png" alt="textica">
-                         </a>
-                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                             <div id="pq-menu-contain" class="pq-menu-contain">
-                                 <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                     <li class="menu-item  menu-item-has-children">
-                                         <a href="https://tifzexports.com/">Home</a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="https://tifzexports.com/">
+                            <img class="img-fluid logo" src="images/logos/header-logo.png" alt="textica">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="https://tifzexports.com/" class="<?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active1' : '' ?>" >Home</a>
+                                    </li>
+                                    <li class="menu-item header menu-item-has-children">
+                                        <a href="about-us.php" class="<?= basename($_SERVER['PHP_SELF']) == 'about-us.php' ? 'active1' : '' ?>">About us</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="our-services.php" class="<?= basename($_SERVER['PHP_SELF']) == 'our-services.php' ? 'active1' : '' ?>">Our Services</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="our-products.php" class="<?= basename($_SERVER['PHP_SELF']) == 'our-products.php' ? 'active1' : '' ?>">Our Products</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="contact-us.php" class="<?= basename($_SERVER['PHP_SELF']) == 'contact-us.php' ? 'active1' : '' ?>">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <!-- Desktop button -->
+                        <div class="pq-toggle-btn">
+                            <a href="javascript:void(0)" class="menu-toggle">Menu</a>
+                        </div>
+                        <!-- Desktop button -->
 
-                                     </li>
-                                     <li class="menu-item header menu-item-has-children">
-                                         <a href="about-us.php">About us</a>
-
-
-                                     </li>
-                                     <li class="menu-item menu-item-has-children">
-                                         <a href="our-services.php">Our Services</a>
-
-
-                                     </li>
-                                     <li class="menu-item menu-item-has-children">
-                                         <a href="our-products.php">Our Products</a>
-
-
-                                     </li>
-
-                                     <li class="menu-item">
-                                         <a href="contact-us.php">Contact us</a>
-                                     </li>
-                                 </ul>
-                             </div>
-                         </div>
-
-                         <!-- Desktop button -->
-                         <div class="pq-toggle-btn">
-                             <a href="javascript:void(0)" class="menu-toggle">Menu</a>
-                         </div>
-                         <!-- Desktop button -->
-
-                         <!-- Mobile button -->
-                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                             <i class="fas fa-bars"></i>
-                         </button>
-                         <!-- Mobile button -->
-
-                     </nav>
-                 </div>
-             </div>
-         </div>
-     </div>
+                        <!-- Mobile button -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <!-- Mobile button -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
  </header>
  <!-- Header -->
+

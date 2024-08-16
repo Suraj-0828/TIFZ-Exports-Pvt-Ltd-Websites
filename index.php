@@ -55,6 +55,19 @@
     <link rel="stylesheet" href="css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0LJHN21FY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P0LJHN21FY');
+    </script>
 </head>
 
 <body>
@@ -88,7 +101,7 @@
                 <div class="col-xl-6">
                     <div class="pq-about-us-img">
                         <img src="images/index-img/collage2d.png" alt="">
-                        
+
                     </div>
                 </div>
                 <div class="col-xl-6 mt-4 mt-xl-0 ps-xl-5 wow animated fadeInRight">

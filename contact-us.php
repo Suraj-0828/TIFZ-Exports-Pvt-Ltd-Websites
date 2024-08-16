@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <title> Get in Touch with TIFZ Exports Pvt. Ltd.</title>
 
     <meta name="description" content="Contact TIFZ Exports Pvt. Ltd. for all your global food and non-food product distribution needs. We ensure top-tier quality and service across India, Saudi Arabia, UAE, Belgium, Italy, Pakistan, Ukraine, and Brazil. Reach out today to discover how we can meet your international trade requirements with precision and reliability.">
@@ -40,12 +40,26 @@
 
     <!-- Ensure you have the latest version of Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
-    
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0LJHN21FY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P0LJHN21FY');
+    </script>
 </head>
+
 <body>
 
 
@@ -82,7 +96,7 @@
                             </div>
                             <div class="pq-contact-media-content">
                                 <h4>Contact Number</h4>
-                                
+
                             </div>
                         </div>
                         <p class="pq-contact-box-description">Phone No : +91-9920028121<br>Phone No : +91-9619163872</p>
@@ -95,8 +109,8 @@
                                 <i class="ti-email"></i>
                             </div>
                             <div class="pq-contact-media-content">
-                            <h4>Email</h4>
-                            
+                                <h4>Email</h4>
+
                             </div>
                         </div>
                         <p class="pq-contact-box-description">Email : info@tifzexports.com</p>
@@ -109,12 +123,12 @@
                                 <i class="ion ion-ios-location"></i>
                             </div>
                             <div class="pq-contact-media-content">
-                            <h4>Location</h4>
-                           
+                                <h4>Location</h4>
+
                             </div>
                         </div>
                         <p class="pq-contact-box-description">Plot 390 / 392, Hakim Bungalow, Shaikh Misree Road, Antop
-                        Hill, Mumbai - 400037</p>
+                            Hill, Mumbai - 400037</p>
                     </div>
                 </div>
             </div>
@@ -132,11 +146,11 @@
                             <img decoding="async" src="images/section-title/title-icon-primary.png" alt="image">LET'S TALK
                         </span>
                         <h5 class="pq-section-main-title">Contact Us &amp; Get In Touch !</h5>
-                        <p class="pq-section-description">We'd love to hear from you! Whether you have feedback or an inquiry, feel 
-free to leave a message. Let's connect and make great things happen 
-together!</p>
+                        <p class="pq-section-description">We'd love to hear from you! Whether you have feedback or an inquiry, feel
+                            free to leave a message. Let's connect and make great things happen
+                            together!</p>
                         <p><b>Working hours</b><br>
-                        ● Monday to Saturday 9.00 am to 5.00 pm</p>
+                            ● Monday to Saturday 9.00 am to 5.00 pm</p>
                     </div>
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8577863922324!2d72.86072147150072!3d19.025987314154616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf304282824b%3A0x76221cd13d48ebcb!2sShaikh%20Mistry%20Rd%2C%20Antop%20Hill%2C%20Mumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sbd!4v1720718613568!5m2!1sen!2sbd" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
@@ -180,7 +194,7 @@ together!</p>
     </section>
     <!-- Contact Form -->
 
-   
+
     <!-- Footer -->
     <?php include 'footer.php'; ?>
     <!-- Footer -->

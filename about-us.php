@@ -48,6 +48,19 @@
     <link rel="stylesheet" href="css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0LJHN21FY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P0LJHN21FY');
+    </script>
 </head>
 
 <body>
@@ -316,7 +329,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-6 col-md-6 pe-0">
                                             <div class="timeline-image pq-pe-90">
-                                                <h3 class="mb-2 wow animated fadeInRight" style="margin: auto; text-align: center; font-size: 90px; color: #4BAF47;">CEO</h3>
+                                                <h3 class="mb-2 wow animated fadeInRight" style="margin: auto; text-align: center; font-size: 90px; color: #408242;">CEO</h3>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 mt-4 mt-md-0 ps-0">
@@ -363,7 +376,7 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 ps-0">
                                             <div class="timeline-image pq-ps-90">
-                                                <h3 class="mb-2 wow animated fadeInLeft" style="margin: auto; text-align: center; font-size: 90px; color: #4BAF47;">CMO</h3>
+                                                <h3 class="mb-2 wow animated fadeInLeft" style="margin: auto; text-align: center; font-size: 90px; color: #408242;">CMO</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -373,7 +386,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-6 col-md-6 pe-0">
                                             <div class="timeline-image pq-pe-90">
-                                                <h3 class="mb-2 wow animated fadeInRight" style="margin: auto; text-align: center; font-size: 90px; color: #4BAF47;">COO</h3>
+                                                <h3 class="mb-2 wow animated fadeInRight" style="margin: auto; text-align: center; font-size: 90px; color: #408242;">COO</h3>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 mt-4 mt-md-0 ps-0">

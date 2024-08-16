@@ -78,6 +78,19 @@
             text-align: center;
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0LJHN21FY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P0LJHN21FY');
+    </script>
 </head>
 
 <body>
@@ -88,6 +101,7 @@
 
     <!-- Breadcrumb -->
     <div class="pq-breadcrumb">
+        <img src="images/breadcrumb/aaa.jpg" alt="Background Image" class="pq-breadcrumb-img">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -95,7 +109,6 @@
                         <div class="pq-breadcrumb-title translatebreadcrumbtext">
                             <h1>Success</h1>
                         </div>
-                        
                     </nav>
                 </div>
             </div>

@@ -47,6 +47,19 @@
     <link rel="stylesheet" href="css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0LJHN21FY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P0LJHN21FY');
+    </script>
 </head>
 
 <body>
@@ -387,7 +400,7 @@
                                         <a href="#">Oil</a>
                                     </div>
                                     <h5>
-                                        <a href="#">Palm Oil</a>
+                                        <a href="#">Sunflower Oil</a>
                                     </h5>
                                 </div>
                             </div>
@@ -404,7 +417,7 @@
                                         <a href="#">Oil</a>
                                     </div>
                                     <h5>
-                                        <a href="#">Sunflower Oil</a>
+                                        <a href="#">Palm Oil</a>
                                     </h5>
                                 </div>
                             </div>

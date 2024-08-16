@@ -1,61 +1,43 @@
 <?php
-ob_start(); // Start output buffering
 
-// Enable error reporting for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Include SwiftMailer autoload file
-require 'swiftmailer/vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Details of Complainant
+
+    $to = 'info@tifzexports.com';
+    $subject = 'Contact Us - Form Enquiry';
+
+
+
     $data = '<table border="1" bordercolor="#ccc" align="center" width="650" style="width:650px;" cellpadding="10" cellspacing="0">';
-    $data .= '<tr><td colspan="2" align="center" style="font-size:15px; font-weight:600;">Enquiry Details :-</td></tr>';
-    $data .= '<tr><td>Name </td><td>' . htmlspecialchars($_POST['name']) . '</td></tr>';
-    $data .= '<tr><td>Email </td><td>' . htmlspecialchars($_POST['email']) . '</td></tr>';
-    $data .= '<tr><td>Phone No </td><td>' . htmlspecialchars($_POST['phone']) . '</td></tr>';
-    $data .= '<tr><td>Company Name </td><td>' . htmlspecialchars($_POST['company']) . '</td></tr>';
-    $data .= '<tr><td>Subject </td><td>' . htmlspecialchars($_POST['user_role']) . '</td></tr>';
-    $data .= '<tr><td>Message  </td><td>' . htmlspecialchars($_POST['message']) . '</td></tr>';
-    $data .= '<tr><td>IP Address  </td><td>' . $_SERVER['REMOTE_ADDR'] . '</td></tr>';
+
+    $data .= '<tr><td colspan="2" align="center">Contact Details </td></tr>';/* field name */
+
+    $data .= '<tr><td>Full Name: </td><td>' . $_POST['name'] . '</td></tr>';
+    $data .= '<tr><td>Email ID: </td><td>' . $_POST['email'] . '</td></tr>';
+    $data .= '<tr><td>Phone No: </td><td>' . $_POST['phone'] . '</td></tr>';
+    $data .= '<tr><td>PostCode: </td><td>' . $_POST['company'] . '</td></tr>';
+    $data .= '<tr><td>PostCode: </td><td>' . $_POST['user_role'] . '</td></tr>';
+    $data .= '<tr><td>Message: </td><td>' . $_POST['message'] . '</td></tr>';
+
+    $data .= '<tr><td>IP Adderss  </td><td>' . $_SERVER['REMOTE_ADDR'] . '</td></tr>';
+
     $data .= '</table>';
 
-    
-    // Create the Transport
-    $transport = (new Swift_SmtpTransport('mail.tifzexports.com', 587))
-        ->setUsername('info@photokala.in')
-        ->setPassword('info@1245');
+    $message = $data;
 
-    // Create the Mailer using the created Transport
-    $mailer = new Swift_Mailer($transport);
+    $headers = "MIME-Version: 1.0" . "\r\n";
 
-    // Create a message
-    $message = (new Swift_Message('Contact Form Query'))
-        ->setFrom(['info@photokala.in' => 'Contact Form Query'])
-        ->setTo(['suraj.itarsia@gmail.com' => 'Contact Form Query'])
-        ->setBody($data, 'text/html');
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-    // Send the message
-    try {
-        $result = $mailer->send($message);
+    $headers .= 'From: Contact Us <info@tifzexports.com>' . "\r\n";
 
-        // Check if email sent successfully
-        if ($result) {
-            header('Location: success.php');
-            exit; // Ensure script stops executing after redirection
-        } else {
-            header('Location: failed.php');
-            exit; // Ensure script stops executing after redirection
-        }
-    } catch (Exception $e) {
-        echo 'Message could not be sent. Mailer Error: ' . $e->getMessage();
+    header('Content-Type: application/json');
+
+    if (mail($to, $subject, $message, $headers)) {
+
+        header('Location: success.php');
+    } else {
+
         header('Location: failed.php');
-        exit; // Ensure script stops executing after redirection
     }
-} else {
-    exit('Invalid Request!');
 }
-
-ob_end_flush(); // Flush output buffer and send it to the browser
-?>
