@@ -67,7 +67,7 @@ Moz Selection
 
 
 :root {
-	--primary-color: #4BAF47;
+	--primary-color: #408242;
 	--dark-color: #272B36;
 	--secondary-color: #666666;
 	--grey-color: #F5F5F5;
@@ -174,7 +174,7 @@ h6 {
 /*++++++++++++++++ HTML Tags +++++++++++*/
 a,
 .button {
-	color: #4BAF47;
+	color: #408242;
 	outline: none !important;
 	text-decoration: none;
 	transition: all 0.5s ease-in-out;
@@ -423,7 +423,7 @@ Back to Top
 	right: 30px;
 	margin: 0px;
 	color: var(--white-color);
-	background: #4BAF47;
+	background: #408242;
 	z-index: 999;
 	border: 1px solid var(--white-color);
 	font-size: 26px;
@@ -539,7 +539,7 @@ Button Core
 	position: relative;
 	width: auto;
 	border-radius: 8px !important;
-	background: #4BAF47;
+	background: #408242;
 	color: var(--white-color);
 	vertical-align: middle;
 	display: inline-block;
@@ -590,7 +590,7 @@ Button Core
 .pq-button.pq-button-link {
 	padding: 0;
 	background: transparent;
-	color: #4BAF47;
+	color: #408242;
 }
 
 .pq-button.pq-button-link svg {
@@ -1773,7 +1773,7 @@ Section Title
 	line-height: 26px;
 	position: relative;
 	text-transform: uppercase;
-	color: #4BAF47;
+	color: #408242;
 	margin: 0 0 10px;
 	display: inline-block;
 }
@@ -2672,7 +2672,7 @@ header#pq-header.pq-header-style-2 .pq-bottom-header .navbar .navbar-nav {
 header#pq-header.pq-header-style-2 .pq-toggle-btn {
 	line-height: 75px;
 	padding: 22px 10px;
-	background: #4BAF47;
+	background: #408242;
 	color: var(--white-color);
 	cursor: pointer;
 	margin-left: 30px;
@@ -5247,9 +5247,9 @@ Timelines
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background: #4BAF47;
+	background: #408242;
 	border-radius: 100%;
-	border: 2px solid #4BAF47;
+	border: 2px solid #408242;
 }
 
 .timeline-state{
@@ -5987,7 +5987,7 @@ Icon Box
 	display: inline-block;
 	text-align: center;
 	background-color: var(--grey-color);
-	color: #4BAF47;
+	color: #408242;
 }
 
 .pq-icon-box.pq-style-3 .pq-icon-box-content{
@@ -6247,7 +6247,7 @@ Lists
 }
 
 .pq-list-check li i{
-    color: var(--primary-color);
+    color: #408242;
     font-size: 20px;
 }
 
@@ -6276,7 +6276,7 @@ Lists
 }
 
 .pq-benefits-list li i{
-	color: #4BAF47;
+	color: #408242;
 	margin-right: 10px;
 	font-size: 14px;
 }
@@ -7051,7 +7051,7 @@ Custom CSS
 }
 
 .countries div:hover {
-    background-color: #4CAF50; /* Green background */
+    background-color: #408242; /* Green background */
     color: #fff; /* Change text color to white for better contrast */
     transform: scale(1.05); /* Slightly scale up the element */
 }
@@ -7068,4 +7068,9 @@ Custom CSS
         font-size: 0.9em;
         margin: 5px 8px;
     }
+}
+
+.active1 {
+    color: #408242 !important; /* Change this color to whatever you want */
+    font-weight: bold; /* Optional: make the active link bold */
 }
